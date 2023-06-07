@@ -1,1 +1,80 @@
-
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+body{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: #fff; 
+    min-height: 100vh; 
+}
+.container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    width: 30.3rem; 
+    height: 750px; 
+    background: #795548; 
+    border-radius: 2rem; 
+}
+.calculator_display{
+    position: absolute;
+    top: 40px; 
+    left: 2.5%; 
+    width: 95%; 
+    height: 90px;
+    border-radius: 1rem; 
+    border: 1px solid #3E2723;
+    box-shadow: inset 5px 5px 5px #3E2723,
+               inset -5px -5px 5px #3E2723; 
+}
+.calculator_display input{
+    width: 100%; 
+    height: 100%; 
+    border: none;
+    outline: none;
+    background: transparent; 
+    text-align: right; 
+    color: #fff; 
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-right: 10px; 
+}
+.buttons{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    height: 50%; 
+}
+.button{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 80px; 
+    height: 80px; 
+    background: #795548; 
+    border-radius: 30px; 
+    margin-left: 40px;
+    margin-bottom: 30px; 
+    color: #fff; 
+    font-size: 2rem; 
+    font-weight: 1000; 
+    box-shadow: 5px 5px 8px #3E2723,
+              -5px -5px 8px #3E2723;
+    transition: all .4s ease-in; 
+}
+.button:hover{
+    box-shadow: inset 5px 5px 8px #3E2723,
+              inset -5px -5px 8px #3E2723;
+    transition: all .3s ease-out;
+}
+.b1{
+    margin-left: 8px; 
+}
+.button:last-child{
+    width: 200px; 
+}
